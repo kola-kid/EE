@@ -19,6 +19,7 @@ public class AdminController {
                                @RequestParam int val){
         flowerDAO.addFlower(new Flowers(name, price, val));
         return "addstock";
+        //asd
     }
 
     @RequestMapping(value = "/stock", method = RequestMethod.GET)
