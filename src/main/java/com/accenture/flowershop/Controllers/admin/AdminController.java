@@ -18,7 +18,7 @@ public class AdminController {
     public String addOnStockAdmin(@RequestParam String name, @RequestParam double price,
                                @RequestParam int val){
         flowerDAO.addFlower(new Flowers(name, price, val));
-        return "addstock";
+        return "addstojck";
         //asd
     }
 
