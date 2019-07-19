@@ -3,6 +3,7 @@ package com.accenture.flowershop.Models.user;
 import com.accenture.flowershop.Models.orders.Orders;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "USER")

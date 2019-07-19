@@ -5,6 +5,7 @@ import com.accenture.flowershop.Models.user.User;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "Orders")
@@ -16,6 +17,14 @@ public class Orders {
     private Date openDate;
     private Date closeDate;
     private String status;
+
+    //@ManyToOne
+    //@JoinColumn(name = "User_id")
+    //private User user;
+
+    //@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    //@JoinColumn(name = "Order_id")
+    //private List<OrderItem> orderItemList;
 
     public Orders() {
     }
@@ -96,5 +105,19 @@ public class Orders {
         this.flowerId = flowerId;
     }
 
+    //public User getUser() {
+    //    return user;
+    //}
 
+   // public void setUser(User user) {
+   //     this.user = user;
+    //}
+
+   // public List<OrderItem> getOrderItemList() {
+   //     return orderItemList;
+    //}
+
+    //public void setOrderItemList(List<OrderItem> orderItemList) {
+     //   this.orderItemList = orderItemList;
+   // }
 }
